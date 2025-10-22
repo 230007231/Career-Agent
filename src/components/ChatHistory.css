@@ -1,0 +1,236 @@
+.chat-history {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7fafc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+  }
+button:focus{
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+} 
+a:focus{
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+  .history-main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .history-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .history-header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+  }
+  
+  .history-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 8px;
+  }
+  
+  .history-header p {
+    color: #6b7280;
+    font-size: 1rem;
+  }
+  
+  .new-chat-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .new-chat-button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  .empty-history {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .empty-icon {
+    font-size: 3rem;
+    color: #94a3b8;
+    margin-bottom: 16px;
+  }
+  
+  .empty-history h2 {
+    font-size: 1.5rem;
+    color: #374151;
+    margin-bottom: 8px;
+  }
+  
+  .empty-history p {
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  
+  .empty-action-button {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .empty-action-button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  
+  .history-item:hover {
+    background-color: #f8fafc;
+  }
+  
+  .history-content {
+    flex: 1;
+  }
+  
+  .history-info h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 4px;
+  }
+  
+  .history-preview {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  .history-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 0.8rem;
+    color: #94a3b8;
+  }
+  
+  .history-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .view-chat-button,
+  .delete-chat-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .view-chat-button {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+  
+  .view-chat-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .delete-chat-button {
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+  
+  .delete-chat-button:hover {
+    background-color: #c82333;
+  }
+  
+  .history-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .history-main {
+      padding: 16px;
+    }
+  
+    .history-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .history-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .history-actions {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .history-header h1 {
+      font-size: 1.3rem;
+    }
+  
+    .history-item {
+      padding: 12px;
+    }
+  
+    .history-info h3 {
+      font-size: 1rem;
+    }
+  
+    .history-preview {
+      font-size: 0.8rem;
+    }
+  
+    .view-chat-button,
+    .delete-chat-button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }

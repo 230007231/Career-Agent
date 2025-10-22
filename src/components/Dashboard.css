@@ -1,0 +1,244 @@
+.dashboard {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+a:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+.feature-card:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+.dashboard-main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.dashboard-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2563eb;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.dashboard-subtitle {
+    color: #6b7280;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 64px;
+    flex-wrap: wrap;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.action-button.primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.action-button.primary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 102, 0, 0.3);
+}
+
+.action-button.secondary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.action-button.secondary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 102, 0, 0.3);
+}
+
+.button-icon {
+    font-size: 1.4rem;
+}
+
+.button-text {
+    font-size: 1.1rem;
+}
+
+.features-section {
+    margin-top: 64px;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #111827;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #f3f4f6;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover
+.feature-card:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #e5e7eb;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Accessibility improvements - removed blue focus styles */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .feature-card {
+        border-width: 2px;
+    }
+
+    .action-button.primary {
+        border-width: 3px;
+    }
+
+    .action-button.secondary {
+        border-width: 3px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .action-button,
+    .feature-card {
+        transition: none;
+    }
+
+    .action-button:hover,
+    .feature-card:hover
+    .action-button:focus,
+    .feature-card:focus {
+        transform: none;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .dashboard-main {
+        padding: 24px 16px;
+    }
+
+    .dashboard-content h1 {
+        font-size: 2rem;
+    }
+
+    .dashboard-subtitle {
+        font-size: 1rem;
+        margin-bottom: 32px;
+    }
+
+    .dashboard-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .action-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .features-section {
+        margin-top: 48px;
+    }
+
+    .features-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .feature-card {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .action-button {
+        padding: 16px 24px;
+    }
+
+    .button-text {
+        font-size: 1rem;
+    }
+}
