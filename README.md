@@ -1,4 +1,8 @@
-# Latest Version
+## News
+
+2025-10-25: Introduce AI Career Coach for the Disabled! 
+
+## Installation
 
 ### Step 1: 
 
@@ -120,22 +124,16 @@ To know more about API functions, refer to the URL http://localhost:3001/api/doc
 
 We could explore and learn more functions in the AnythingLLM for our project. :rocket:
 
-### Final Step: Front-end setting 
+## Quick start
 
 After all the above steps, download the zip file and unzip it, cd this directory.
 
-First Run
+Run the following to talk with your AI career coach!
 ```
 pip install -r requirements.txt
-```
-Then run
 
-```
 npm install
-```
-and then
 
-```
 npm start
 ```
 
