@@ -1,4 +1,4 @@
-[!Career Coach](public/career-coach.jpg)
+![Career Coach](/public/career-coach.jpg)
 ## News
 
 2025-10-25: Introduce AI Career Coach for the Disabled! 
