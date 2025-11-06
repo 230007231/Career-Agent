@@ -70,11 +70,7 @@ Visit http://localhost:3001 in your browser, click the "Get Started " button.
 Select the LLM that you prefer.
 ![Select the LLM that you prefer](https://github.com/230007231/Image_Career-Agent-main/blob/a0652256a0635c142042432a28da1fea757c7e11/Images/image4.png)
 
-If you wish to utilize DeepSeek, the API Keys are provided.
 
-```
-sk-b1f7eefdc3914c9fbaae256bbeff0bcd
-```
 
 Select the "AnythingLLM Embedder" for embedding models.
 ![Select the AnythingLLM Embedder](https://github.com/230007231/Image_Career-Agent-main/blob/a0652256a0635c142042432a28da1fea757c7e11/Images/image5.png)
